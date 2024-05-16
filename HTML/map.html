@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .map-link {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .map-link img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Map Viewer</h1>
+    <p>(Choose one map)</p>
+    <a href="#" class="map-link" onclick="showIndiaMap()">Map of India</a>
+    <a href="#" class="map-link" onclick="showWorldMap()">World Map</a>
+
+    <script>
+        function showIndiaMap() {
+            window.open('india_map.html', '_blank');
+        }
+
+        function showWorldMap() {
+            window.open('world_map.html', '_blank');
+        }
+    </script>
+</body>
+</html>

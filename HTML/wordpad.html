@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPad Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #wordpad-window {
+            background-image: url("/images/wordpad.png");
+            background-size: cover;
+            width: 800px;
+            height: 600px;
+            position: relative;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .toolbar, .status-bar, .menu-bar, .title-bar, .ruler {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            position: absolute;
+            cursor: pointer;
+        }
+        .toolbar { top: 0; }
+        .status-bar { bottom: 0; }
+        .menu-bar { top: 20px; }
+        .title-bar { top: 40px; }
+        .ruler { top: 60px; }
+        #info-popup {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            max-width: 300px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Touch the options to know their information</h2>
+    <div id="wordpad-window">
+        <div class="toolbar" onclick="displayInfo('Toolbar')">Toolbar</div>
+        <div class="status-bar" onclick="displayInfo('Status Bar')">Status Bar</div>
+        <div class="menu-bar" onclick="displayInfo('Menu Bar')">Menu Bar</div>
+        <div class="title-bar" onclick="displayInfo('Title Bar')">Title Bar</div>
+        <div class="ruler" onclick="displayInfo('Ruler')">Ruler</div>
+    </div>
+    <div id="info-popup"></div>
+    <div><h2>Preview of the Wordpad Window</h2><img src="/images/wordpad.png" width="400px"></div>
+    <script>
+        function displayInfo(element) {
+            const info = {
+                'Toolbar': 'The toolbar contains various tools and options for editing documents.',
+                'Status Bar': 'The status bar displays information about the document, such as page number, word count, etc.',
+                'Menu Bar': 'The menu bar contains menus like File, Edit, View, etc., providing access to additional functionalities.',
+                'Title Bar': 'The title bar displays the name of the document and contains controls for minimizing, maximizing, and closing the window.',
+                'Ruler': 'The ruler is used for adjusting margins, tabs, and indentation in the document.'
+            };
+            const popup = document.getElementById('info-popup');
+            popup.innerText = info[element];
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
