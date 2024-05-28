@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.window {
+    width: 400px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-bar, .menu-bar, .status-bar, .ruler {
+    padding: 10px;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+
+.title-bar {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.menu-bar {
+    background-color: #34495e;
+    color: white;
+}
+
+.ruler {
+    background-color: #ecf0f1;
+}
+
+.status-bar {
+    background-color: #bdc3c7;
+}
+
+.content {
+    padding: 20px;
+    height: 150px;
+    background-color: white;
+}

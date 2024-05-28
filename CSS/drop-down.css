@@ -1,0 +1,8 @@
+label {
+    font-weight: bold;
+    display: block;
+  }
+  select {
+    height: 100px;
+    margin-left: 120px;
+  }

@@ -1,0 +1,21 @@
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}

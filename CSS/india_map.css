@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.state-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}

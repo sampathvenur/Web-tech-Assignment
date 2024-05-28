@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Seminar Registration</title>
+    <link rel="stylesheet" href="/CSS/registration.css">
+</head>
+
+<body>
+    <h1>International Seminar Registration</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <label for="participantType">Participant Type:</label>
+            <select id="participantType" name="participantType" required>
+                <option value="Student">Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Professional">Professional</option>
+                <option value="CompanyRep">Company/Firm Representative</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Registration Fees</legend>
+            <label for="feesCurrency">Currency:</label>
+            <input type="radio" id="inr" name="feesCurrency" value="INR" required>
+            <label for="inr">INR</label>
+            <input type="radio" id="usd" name="feesCurrency" value="USD">
+            <label for="usd">USD</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Method</legend>
+            <input type="radio" id="creditCard" name="paymentMethod" value="Credit Card" required>
+            <label for="creditCard">Credit Card</label>
+            <input type="radio" id="debitCard" name="paymentMethod" value="Debit Card">
+            <label for="debitCard">Debit Card</label>
+            <input type="radio" id="demandDraft" name="paymentMethod" value="Demand Draft">
+            <label for="demandDraft">Demand Draft</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Accommodation Preferences</legend>
+            <label for="hotel">Choose Hotel:</label>
+            <select id="hotel" name="hotel" required>
+                <option value="">Select a hotel</option>
+                <option value="HotelA">Hotel A</option>
+                <option value="HotelB">Hotel B</option>
+                <option value="HotelC">Hotel C</option>
+                <option value="HotelD">Hotel D</option>
+            </select>
+
+            <label for="services">Select Services:</label>
+            <input type="checkbox" id="wifi" name="services" value="WiFi">
+            <label for="wifi">WiFi</label>
+            <input type="checkbox" id="breakfast" name="services" value="Breakfast">
+            <label for="breakfast">Breakfast</label>
+            <input type="checkbox" id="laundry" name="services" value="Laundry">
+            <label for="laundry">Laundry</label>
+            <input type="checkbox" id="airportShuttle" name="services" value="Airport Shuttle">
+            <label for="airportShuttle">Airport Shuttle</label>
+            <input type="checkbox" id="gym" name="services" value="Gym">
+            <label for="gym">Gym</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comments">Comments or Special Requests:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <div class="submit-btn">
+            <button type="submit">Submit Registration</button>
+        </div>
+    </form>
+</body>
+
+</html>

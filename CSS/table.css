@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    background-color: rgb(63, 185, 219);
+}
+
+table,
+th,
+td {
+    border: 2px solid #000;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #c0c0c0;
+}
+
+.course {
+    background-color: #d1e7f7;
+}
+
+.sub-header {
+    background-color: #b0c4de;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000080;
+}

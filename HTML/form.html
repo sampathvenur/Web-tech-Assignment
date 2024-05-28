@@ -38,15 +38,7 @@
         <input type="submit" value="Submit">
         <input type="reset" value="Clear">
     </form>
-    <script>
-        document.getElementById("customerForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-            const formData = new FormData(this);
-            for (var pair of formData.entries()) {
-                console.log(pair[0] + ': ' + pair[1]);
-            }
-        });
-    </script>
+    <script src="/JavaScript/form.js"></script>
 </body>
 
 </html>

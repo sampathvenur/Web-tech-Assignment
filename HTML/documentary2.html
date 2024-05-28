@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentary Web Page</title>
+    <link rel="stylesheet" href="/CSS/documentary2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Documentary Web Page</h1>
+        <p>Welcome to Sampath's documentary web page! Here, we explore the usage of the <code>&lt;select&gt;</code> and
+            <code>&lt;textarea&gt;</code> HTML tags in building interactive forms for gathering user information.</p>
+        <h2>Understanding the Form Elements</h2>
+        <p>Below, you will find a form with two key elements: a dropdown list and a multiline text input field. Let's
+            dive into their functionalities:</p>
+        <form>
+            <label for="country">Select Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+            <div class="btn-group">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn">Clear</button>
+            </div>
+        </form>
+        <p>Feel free to interact with the form elements above! Select a country from the dropdown list and provide your
+            comments in the text area. Once done, you can either submit the form or clear the contents.</p>
+        <p>Thank you for exploring this documentary web page!</p>
+    </div>
+</body>
+
+</html>

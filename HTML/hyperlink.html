@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAMES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<frameset rows="100px,*,100px">
+    <frameset cols="50%,50%">
+        <frame src="/HTML/logo.html" name="logoFrame" frameborder="1">
+            <frame src="/HTML/college-info.html" name="infoFrame" frameborder="1">
+    </frameset>
+    <frame src="/HTML/frame4.html" name="mainFrame" frameborder="1">
+        <frame src="/HTML/links.html" name="linksFrame" frameborder="1">
+</frameset>
+
+<noframes>
+
+    <body>
+        <p>Your browser does not support frames. Please update your browser to view this page.</p>
+    </body>
+</noframes>
+
+</html>

@@ -1,0 +1,24 @@
+table,
+        td,
+        tr {
+            border: solid black 1px;
+            border-collapse: collapse;
+        }
+
+        .a {
+            float: left;
+        }
+
+        .b {
+
+            padding-left: 600px;
+        }
+
+        .c {
+            float: left;
+        }
+
+        .d {
+
+            padding-left: 600px;
+        }
